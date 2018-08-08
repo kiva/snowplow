@@ -1,5 +1,5 @@
 {
-	"$schema": "https://raw.githubusercontent.com/kiva/vertex/master/conf/snowplow_transaction_event_schema.json#",
+	"$schema": "https://raw.githubusercontent.com/kiva/snowplow/master/conf/snowplow_transaction_event_schema.json#",
 	"description": "Schema for a Kiva transaction event",
 	"self": {
 		"vendor": "org.kiva",
