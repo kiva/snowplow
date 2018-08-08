@@ -1,0 +1,37 @@
+{
+	"$schema": "https://raw.githubusercontent.com/kiva/vertex/master/conf/snowplow_transaction_event_schema_1_0_1.json#",
+	"description": "Schema for a Kiva transaction event",
+	"self": {
+		"vendor": "org.kiva",
+		"name": "transaction_event",
+		"format": "jsonschema",
+		"version": "1-0-1"
+	},
+
+	"type": "object",
+	"properties": {
+		"source": {
+			"type": "string"
+		},
+		"medium": {
+			"type": "string"
+		},
+		"campaign": {
+			"type": "string"
+		},
+		"campaignContent": {
+			"type": "string"
+		},
+		"transactionId": {
+			"type": "integer",
+			"minimum": 0
+		},
+		"snowplowUserId": {
+			"type": "string"
+		},
+		"snowplowSessionId": {
+			"type": "string"
+		}
+	},
+	"additionalProperties": false
+}
