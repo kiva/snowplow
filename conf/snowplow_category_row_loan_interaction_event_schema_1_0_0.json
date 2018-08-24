@@ -1,0 +1,36 @@
+{
+	"$schema": "https://raw.githubusercontent.com/kiva/snowplow/master/conf/snowplow_category_row_loan_interaction_event_schema_1_0_0.json#",
+	"description": "Schema for a Kiva /lend-by-category loan interaction event",
+	"self": {
+		"vendor": "org.kiva",
+		"name": "lend_by_category_loan_interaction_event",
+		"format": "jsonschema",
+		"version": "1-0-0"
+	},
+
+	"type": "object",
+	"properties": {
+		"interactionType": {
+			"type": "string"
+		},
+		"interactionElement": {
+			"type": "string"
+		},
+		"loanId": {
+			"type": "integer"
+		},
+		"categorySetIdentifier": {
+			"type": "string"
+		},
+		"categoryId": {
+			"type": "integer"
+		},
+		"row": {
+			"type": "integer"
+		},
+		"position": {
+			"type": "integer"
+		}
+	},
+	"additionalProperties": false
+}
