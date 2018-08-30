@@ -1,11 +1,11 @@
 {
-	"$schema": "https://raw.githubusercontent.com/kiva/snowplow/master/conf/snowplow_category_row_page_load_event_schema_1_0_0.json#",
+	"$schema": "https://raw.githubusercontent.com/kiva/snowplow/master/conf/snowplow_category_row_page_load_event_schema_1_0_1.json#",
 	"description": "Schema for a Kiva /lend-by-category page load event",
 	"self": {
 		"vendor": "org.kiva",
 		"name": "lend_by_category_page_load_event",
 		"format": "jsonschema",
-		"version": "1-0-0"
+		"version": "1-0-1"
 	},
 
 	"type": "object",
