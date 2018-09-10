@@ -13,12 +13,6 @@
 		"categorySetIdentifier": {
 			"type": "string"
 		},
-		"categoriesDisplayed": {
-			"type": "array",
-			"items": {
-				"type": "integer"
-			}
-		},
 		"loansDisplayed": {
 			"type": "array",
 			"items": {
