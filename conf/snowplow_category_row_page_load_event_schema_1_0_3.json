@@ -19,12 +19,6 @@
 				"type": "integer"
 			}
 		},
-		"sortsDisplayed": {
-			"type": "array",
-			"items": {
-				"type": "string"
-			}
-		},
 		"loansDisplayed": {
 			"type": "array",
 			"items": {
