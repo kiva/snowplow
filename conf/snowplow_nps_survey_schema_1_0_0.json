@@ -1,0 +1,21 @@
+{
+	"$schema": "https://raw.githubusercontent.com/kiva/snowplow/master/conf/snowplow_nps_survey_schema_1_0_0.json#",
+	"description": "Schema for a NPS Survey Data",
+	"self": {
+		"vendor": "org.kiva",
+		"name": "nps_survey_data",
+		"format": "jsonschema",
+		"version": "1-0-0"
+	},
+
+	"type": "object",
+	"properties": {
+		"score": {
+            "type": "number"
+		},
+		"feedback": {
+			"type": "string"
+		}
+	},
+	"additionalProperties": false
+}
