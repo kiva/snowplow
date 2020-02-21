@@ -1,0 +1,44 @@
+{
+	"$schema": "https://raw.githubusercontent.com/kiva/snowplow/master/conf/snowplow_ml_service_event_schema_1_0_0.json#",
+	"description": "Schema for ML Service Request Data",
+	"self": {
+		"vendor": "org.kiva",
+		"name": "ml_service_data",
+		"format": "jsonschema",
+		"version": "1-0-0"
+	},
+
+	"type": "object",
+	"properties": {
+		"category": {
+			"type": "string",
+			"description": "user interaction type of response given by service"
+		},
+		"action": {
+			"type": "string",
+			"description": "current application the result is intended to satisfy"
+		},
+		"modelName": {
+			"type": "string",
+			"description": "name of the model used to compute the results"
+		},
+		"loginId": {
+			"type": ["integer", "null"],
+			"description": "user id of the logged in user, null if anonymous"
+		},
+		"experiment": {
+			"type": ["string", "null"],
+			"description": "unique identifier of the experiment involved with the current request"
+		},
+		"message": {
+			"type": ["string", "null"],
+			"description": "if an error exists, the message for that error"
+		},
+		"timestamp": {
+			"type": "string",
+			"format": "date-time",
+			"description": "date and time the request was received"
+		}
+	},
+	"additionalProperties": false
+}
