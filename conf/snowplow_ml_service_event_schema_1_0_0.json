@@ -10,6 +10,10 @@
 
 	"type": "object",
 	"properties": {
+		"sessionId": {
+			"type": ["string", "null"],
+			"description": "session id assigned in the client and passed to service"
+		},
 		"category": {
 			"type": "string",
 			"description": "user interaction type of response given by service"
@@ -36,7 +40,6 @@
 		},
 		"timestamp": {
 			"type": "string",
-			"format": "date-time",
 			"description": "date and time the request was received"
 		}
 	},
