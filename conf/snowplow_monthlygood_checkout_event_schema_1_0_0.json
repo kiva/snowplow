@@ -1,0 +1,31 @@
+{
+	"$schema": "https://raw.githubusercontent.com/kiva/snowplow/master/conf/snowplow_monthlygood_checkout_event_schema_1_0_0.json#",
+	"description": "Schema for Monthly Good checkout event",
+	"self": {
+		"vendor": "org.kiva",
+		"name": "monthlygood_checkout_event",
+		"format": "jsonschema",
+		"version": "1-0-0"
+	},
+
+	"type": "object",
+	"properties": {
+		"subscriptionType": {
+			"type": "string",
+			"description": "Subscription type: monthly, one-time"
+		},
+		"category": {
+			"type": "string",
+			"description": "Monthly Good category"
+		},
+		"depositAmount": {
+			"type": "number",
+			"description": "Monthly deposit amount (auto-deposit amount)"
+		},
+		"donationAmount": {
+			"type": "number",
+			"description": "Monthly donation amount"
+		}
+	},
+	"additionalProperties": false
+}
