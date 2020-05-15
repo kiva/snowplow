@@ -10,6 +10,10 @@
 
 	"type": "object",
 	"properties": {
+		"id": {
+			"type": "integer",
+			"description": "The auto deposit id"
+		},
 		"subscriptionType": {
 			"type": "string",
 			"description": "Subscription type: monthly, one-time"
