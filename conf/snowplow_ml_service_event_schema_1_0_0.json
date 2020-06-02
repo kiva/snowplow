@@ -30,6 +30,18 @@
 			"type": ["integer", "null"],
 			"description": "user id of the logged in user, null if anonymous"
 		},
+		"requestedId": {
+			"type": ["integer", "null"],
+			"description": "id embedded in the request, null if not applicable"
+		},
+		"responseId": {
+			"type": ["integer", "null"],
+			"description": "id used to generate the response, null if not applicable"
+		},
+		"idType": {
+			"type": ["string", "null"],
+			"description": "type of identifier used in the requestedId and responseId, null if not applicable"
+		},
 		"experiment": {
 			"type": ["string", "null"],
 			"description": "unique identifier of the experiment involved with the current request"
