@@ -1,0 +1,59 @@
+{
+	"$schema": "https://raw.githubusercontent.com/kiva/snowplow/master/conf/snowplow_ml_service_event_schema_1_0_1.json#",
+	"description": "Schema for ML Service Request Data",
+	"self": {
+		"vendor": "org.kiva",
+		"name": "ml_service_data",
+		"format": "jsonschema",
+		"version": "1-0-1"
+	},
+
+	"type": "object",
+	"properties": {
+		"sessionId": {
+			"type": ["string", "null"],
+			"description": "session id assigned in the client and passed to service"
+		},
+		"category": {
+			"type": "string",
+			"description": "user interaction type of response given by service"
+		},
+		"action": {
+			"type": "string",
+			"description": "current application the result is intended to satisfy"
+		},
+		"modelName": {
+			"type": "string",
+			"description": "name of the model used to compute the results"
+		},
+		"loginId": {
+			"type": ["integer", "null"],
+			"description": "user id of the logged in user, null if anonymous"
+		},
+		"requestedId": {
+			"type": ["integer", "null"],
+			"description": "id embedded in the request, null if not applicable"
+		},
+		"responseId": {
+			"type": ["integer", "null"],
+			"description": "id used to generate the response, null if not applicable"
+		},
+		"idType": {
+			"type": ["string", "null"],
+			"description": "type of identifier used in the requestedId and responseId, null if not applicable"
+		},
+		"experiment": {
+			"type": ["string", "null"],
+			"description": "unique identifier of the experiment involved with the current request"
+		},
+		"message": {
+			"type": ["string", "null"],
+			"description": "if an error exists, the message for that error"
+		},
+		"timestamp": {
+			"type": "string",
+			"description": "date and time the request was received"
+		}
+	},
+	"additionalProperties": false
+}
