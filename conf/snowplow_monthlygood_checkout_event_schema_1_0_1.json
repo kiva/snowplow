@@ -1,5 +1,5 @@
 {
-	"$schema": "https://raw.githubusercontent.com/kiva/snowplow/master/conf/snowplow_monthlygood_checkout_event_schema_1_0_1.json#",
+	"$schema": "http://iglucentral.com/schemas/com.snowplowanalytics.self-desc/schema/jsonschema/1-0-0#",
 	"description": "Schema for Monthly Good checkout event",
 	"self": {
 		"vendor": "org.kiva",
