@@ -1,0 +1,19 @@
+{
+	"$schema": "http://iglucentral.com/schemas/com.snowplowanalytics.self-desc/schema/jsonschema/1-0-0#",
+	"description": "User preferences applied in a global context",
+	"self": {
+		"vendor": "org.kiva",
+		"name": "user_pref_global",
+		"format": "jsonschema",
+		"version": "1-0-0"
+	},
+	"type": "object",
+	"properties": {
+		"theme": {
+			"type": "string",
+			"enum": ["dark", "light"],
+			"description": "UI theme setting (night mode)"
+		}
+	},
+	"additionalProperties": false
+}
