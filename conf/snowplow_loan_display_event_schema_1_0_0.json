@@ -1,9 +1,9 @@
 {
-	"$schema": "https://raw.githubusercontent.com/kiva/snowplow/master/conf/snowplow_lending_home_loan_display_event_schema_1_0_0.json#",
-	"description": "Schema for Kiva lending home loan display events",
+	"$schema": "https://raw.githubusercontent.com/kiva/snowplow/master/conf/snowplow_loan_display_event_schema_1_0_0.json#",
+	"description": "Schema for Kiva loan display events",
 	"self": {
 		"vendor": "org.kiva",
-		"name": "lending_home_loan_display_event",
+		"name": "loan_display_event",
 		"format": "jsonschema",
 		"version": "1-0-0"
 	},
