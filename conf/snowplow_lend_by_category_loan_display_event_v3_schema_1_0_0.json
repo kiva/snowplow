@@ -1,0 +1,35 @@
+{
+	"$schema": "https://raw.githubusercontent.com/kiva/snowplow/master/conf/snowplow_lend_by_category_loan_display_event_v3_schema_1_0_0.json#",
+	"description": "Schema for Kiva /lend-by-category loan display events",
+	"self": {
+		"vendor": "org.kiva",
+		"name": "lend_by_category_loan_display_event_v3",
+		"format": "jsonschema",
+		"version": "1-0-0"
+	},
+
+	"type": "object",
+	"properties": {
+		"sectionIdentifier": {
+			"type": "string"
+		},
+		"sectionPosition": {
+			"type": "number"
+		},
+		"loansDisplayed": {
+			"type": "array",
+			"items": {
+				"type": "object",
+				"properties": {
+					"position": {
+						"type": "number"
+					},
+					"loanId": {
+						"type": "number"
+					}
+				}
+			}
+		}
+	},
+	"additionalProperties": false
+}
