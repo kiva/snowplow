@@ -1,11 +1,11 @@
 {
-	"$schema": "https://raw.githubusercontent.com/kiva/snowplow/master/conf/snowplow_lend_by_category_loan_display_event_v3_schema_1_0_1.json#",
+	"$schema": "https://raw.githubusercontent.com/kiva/snowplow/master/conf/snowplow_lend_by_category_loan_display_event_v3_loan_callouts_schema_1_0_0.json#",
 	"description": "Schema for Kiva /lend-by-category loan display events with loan callouts",
 	"self": {
 		"vendor": "org.kiva",
-		"name": "lend_by_category_loan_display_event_v3",
+		"name": "lend_by_category_loan_display_event_v3_loan_callouts",
 		"format": "jsonschema",
-		"version": "1-0-1"
+		"version": "1-0-0"
 	},
 
 	"type": "object",
