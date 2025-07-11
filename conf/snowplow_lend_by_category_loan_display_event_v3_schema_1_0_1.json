@@ -5,7 +5,7 @@
 		"vendor": "org.kiva",
 		"name": "lend_by_category_loan_display_event_v3",
 		"format": "jsonschema",
-		"version": "1-0-0"
+		"version": "1-0-1"
 	},
 
 	"type": "object",
