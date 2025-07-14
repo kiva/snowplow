@@ -26,23 +26,26 @@
 					},
 					"loanId": {
 						"type": "number"
+					}
+				}
+			}
+		},
+		"loanCallouts": {
+			"type": "array",
+			"items": {
+				"type": "object",
+				"properties": {
+					"id": {
+						"type": "number"
 					},
-					"loanCallouts": {
-						"type": "array",
-						"items": {
-							"type": "object",
-							"properties": {
-								"id": {
-									"type": "number"
-								},
-								"type": {
-									"type": "string"
-								},
-								"label": {
-									"type": "string"
-								}
-							}
-						}
+					"type": {
+						"type": "string"
+					},
+					"label": {
+						"type": "string"
+					},
+					"loanId": {
+						"type": "number"
 					}
 				}
 			}
