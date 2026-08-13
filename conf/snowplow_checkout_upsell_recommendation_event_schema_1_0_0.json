@@ -1,0 +1,38 @@
+{
+	"$schema": "https://raw.githubusercontent.com/kiva/snowplow/master/conf/snowplow_checkout_upsell_recommendation_event_schema_1_0_0.json#",
+	"description": "Schema for Kiva checkout upsell recommendation display events",
+	"self": {
+		"vendor": "org.kiva",
+		"name": "checkout_upsell_recommendation_event",
+		"format": "jsonschema",
+		"version": "1-0-0"
+	},
+
+	"type": "object",
+	"properties": {
+		"balance": {
+			"type": ["number", "null"]
+		},
+		"basketTotal": {
+			"type": "number"
+		},
+		"modelVersion": {
+			"type": "string"
+		},
+		"recommendedRanges": {
+			"type": "array",
+			"items": {
+				"type": "object",
+				"properties": {
+					"start": {
+						"type": "number"
+					},
+					"end": {
+						"type": "number"
+					}
+				}
+			}
+		}
+	},
+	"additionalProperties": false
+}
